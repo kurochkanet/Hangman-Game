@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JMenu" name="jMenu1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jeu"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="cc" green="ff" red="cc" type="rgb"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" pref="233" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="248" max="-2" attributes="0"/>
+                              <Component id="btOK" min="-2" pref="68" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="262" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="26" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="378" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="btOK" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value=" Bonjour cher joueur!&#xa;&#xa;Si vous voulez commencer le jeu, suivez les instructions suivantes:&#xa;&#xa;Dans le champ &quot;Nom du joueur&quot; et &quot;Mot de passe&quot;, entrez l&apos;identifiant de l&apos;utilisateur existant et cliquez sur &quot;OK&quot;. &#xa;&#xa; Si votre joueur n&apos;est pas d&#xe9;j&#xe0; dans le jeu, cliquez sur le bouton &quot;Cr&#xe9;er&quot;. &#xa;Entrez le nom et le nom du joueur. Cliquez sur OK.&#xa;Vous reviendrez automatiquement au formulaire de connexion et verrez que dans le champ &#xa;&quot;Nom du joueur&quot; notre utilisateur est d&#xe9;j&#xe0; sp&#xe9;cifi&#xe9;. Cliquez sur OK Un formulaire avec le jeu s&apos;ouvre.&#xa;&#xa;&#xa0;Dans le champ &quot;Nom du joueur&quot;, vous voyez le joueur actuel et dans le champ SCORE, &#xa;les points re&#xe7;us par ce joueur. Nous voyons &#xe9;galement un champ avec un mot crypt&#xe9; qu&apos;il faut deviner.&#xa;&#xa;Vous devez appuyer sur les boutons du clavier virtuel avec la souris. Lorsque vous appuyez &#xa;sur une lettre du clavier, sa pr&#xe9;sence dans le mot est v&#xe9;rifi&#xe9;e et, si la lettre est incluse &#xa;dans le mot, nous affichons cette lettre avec le mot. Le nombre de mouvements &#xe0; deviner est &#xa;&#xe9;gal &#xe0; la longueur du mot. Apr&#xe8;s avoir indiqu&#xe9; la derni&#xe8;re lettre, nous voyons les informations &#xa;avec f&#xe9;licitations et la proposition de commencer le prochain match. Lorsque vous appuyez sur&#xa;&quot;Oui&quot;, un nouveau mot crypt&#xe9; appara&#xee;tra. Lorsque vous appuyez sur &quot;NON&quot;, nous restons dans &#xa;la forme actuelle.&#xa;&#xa;&#xa0;Si, lorsque vous appuyez sur une lettre, le ch&#xe8;que ne la trouve pas dans le mot - l&apos;image&#xa;de droite affiche l&apos;image de la potence. Avec chaque erreur, l&apos;image est termin&#xe9;e.Apr&#xe8;s 6 erreurs, &#xa;un message appara&#xee;t pour vous informer que vous avez perdu la partie et une offre pour en commencer&#xa; une nouvelle.&#xa;&#xa; Si vous voulez commencer une nouvelle partie, allez dans le menu Partie-Nouvelle partie.&#xa;&#xa; Si vous voulez quitter le jeu - allez au jeu - laissez le point de menu du jeu.&#xa;&#xa; Si vous voulez en savoir plus sur les r&#xe8;gles du jeu - allez au point de menu &#xa;Aide - R&#xe8;gles du jeu.&#xa;&#xa;&#xa0;Si vous avez besoin d&#x2019;informations sur le programme - allez au point de menu &#xa;Aide - &#xc0; propos du jeu."/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="cc" red="0" type="rgb"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="R&#xe8;gles du Jeu de Pendu"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btOK">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="OK"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btOKActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
